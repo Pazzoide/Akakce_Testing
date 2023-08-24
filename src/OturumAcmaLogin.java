@@ -27,6 +27,13 @@ public class OturumAcmaLogin extends BaseDriver {
         loginButton.click();
         MyFunc.Wait(1);
 
+        WebElement userName = driver.findElement(By.xpath("//a[text()='Zafer']"));
+
+
+        Assert.assertTrue("Kullanici ismi gorulemedi",userName.getText().contains("Zafer"));
+
+
+
         BekleVeKapat();
 
 
