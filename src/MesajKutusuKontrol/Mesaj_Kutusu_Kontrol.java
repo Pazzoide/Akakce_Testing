@@ -36,8 +36,8 @@ public class Mesaj_Kutusu_Kontrol extends BaseDriver {
         WebElement mesajlarimTikla=driver.findElement(By.linkText("Mesajlarım"));
         mesajlarimTikla.click();
 
-        WebElement mesajKutusubos=driver.findElement(By.xpath("div[class='wbb_v8']"));
-        Assert.assertTrue("listelenecek mesaj bulunamadı",mesajKutusubos.isDisplayed());
+        WebElement mesajKutusumesaj=driver.findElement(By.xpath("[class='wbb_v8']"));
+        Assert.assertTrue("listelenecek mesaj bulunamadı",mesajKutusumesaj.getText().contains("Görüntülendi"));
 
     }
 }
