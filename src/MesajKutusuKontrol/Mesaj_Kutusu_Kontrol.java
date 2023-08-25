@@ -1,4 +1,4 @@
-package MesajKutusuKontrolu;
+package MesajKutusuKontrol;
 
 import Utility.BaseDriver;
 import org.junit.Assert;
@@ -7,10 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class Mesaj_Kutusu_Kontrolu extends BaseDriver {
-
+public class Mesaj_Kutusu_Kontrol extends BaseDriver {
     @Test
-    public void mesajkutusukotroluTest ()
+    public void MesajKutusuTest()
     {
         driver.get("https://www.akakce.com/");
         WebElement hesapGiris=driver.findElement(By.xpath("(//a[@rel='nofollow'][text()='Giriş Yap'])[1]"));
@@ -39,15 +38,6 @@ public class Mesaj_Kutusu_Kontrolu extends BaseDriver {
 
         WebElement mesajKutusubos=driver.findElement(By.xpath("div[class='wbb_v8']"));
         Assert.assertTrue("listelenecek mesaj bulunamadı",mesajKutusubos.isDisplayed());
-
-
-
-
-
-
-
-
-
 
     }
 }
