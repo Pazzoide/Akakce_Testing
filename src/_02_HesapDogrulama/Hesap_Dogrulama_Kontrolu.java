@@ -1,4 +1,4 @@
-package HesapDogrulama;
+package _02_HesapDogrulama;
 
 import Utility.BaseDriver;
 import Utility.MyFunc;
@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Hesap_Dogrulama_Kontrolu extends BaseDriver {
